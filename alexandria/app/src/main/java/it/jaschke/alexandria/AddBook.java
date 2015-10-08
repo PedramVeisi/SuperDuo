@@ -84,6 +84,11 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
                     bookIntent.setAction(BookService.FETCH_BOOK);
                     getActivity().startService(bookIntent);
                     AddBook.this.restartLoader();
+                } else {
+                    // TODO Move text to strings.xml
+                    Toast toast = Toast.makeText(getActivity(),
+                            "No Internet Connection", Toast.LENGTH_SHORT);
+                    toast.show();
                 }
             }
         });
