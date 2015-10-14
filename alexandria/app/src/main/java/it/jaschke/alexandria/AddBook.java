@@ -32,11 +32,6 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
     private final int LOADER_ID = 1;
     private View rootView;
     private final String EAN_CONTENT = "eanContent";
-    private static final String SCAN_FORMAT = "scanFormat";
-    private static final String SCAN_CONTENTS = "scanContents";
-
-    private String mScanFormat = "Format:";
-    private String mScanContents = "Contents:";
 
     public AddBook() {
     }
@@ -70,8 +65,8 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
             public void afterTextChanged(Editable s) {
                 String ean = s.toString();
                 //catch isbn10 numbers
-                if (ean.length() == 10 && !ean.startsWith("978")) {
-                    ean = "978" + ean;
+                if (ean.length() == 10 && !ean.startsWith(getString(R.string.isbn10_prefix))) {
+                    ean = getString(R.string.isbn10_prefix) + ean;
                 }
                 if (ean.length() < 13) {
                     clearFields();
@@ -85,9 +80,8 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
                     getActivity().startService(bookIntent);
                     AddBook.this.restartLoader();
                 } else {
-                    // TODO Move text to strings.xml
                     Toast toast = Toast.makeText(getActivity(),
-                            "No Internet Connection", Toast.LENGTH_SHORT);
+                            R.string.no_internet_connection, Toast.LENGTH_SHORT);
                     toast.show();
                 }
             }
@@ -145,8 +139,8 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
             return null;
         }
         String eanStr = ean.getText().toString();
-        if (eanStr.length() == 10 && !eanStr.startsWith("978")) {
-            eanStr = "978" + eanStr;
+        if (eanStr.length() == 10 && !eanStr.startsWith(getString(R.string.isbn10_prefix))) {
+            eanStr = getString(R.string.isbn10_prefix) + eanStr;
         }
         return new CursorLoader(
                 getActivity(),
@@ -218,9 +212,8 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
                 ean.setText(scanContent);
             }
         } else {
-            //TODO move string to strings.xml
             Toast toast = Toast.makeText(getActivity(),
-                    "No scan data received!", Toast.LENGTH_SHORT);
+                    R.string.barcode_scan_error, Toast.LENGTH_SHORT);
             toast.show();
         }
     }
