@@ -51,7 +51,7 @@
                 android:textSize="@dimen/Score" />
 
             <TextView
-                android:id="@+id/widget_data_textview"
+                android:id="@+id/widget_date_textview"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_gravity="center"
