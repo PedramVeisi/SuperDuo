@@ -1,30 +1,29 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="32dp">
+    android:layout_margin="@dimen/widget_margin">
 
     <LinearLayout
+        android:id="@+id/widget"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#bbDEDFDE"
         android:orientation="vertical">
 
         <LinearLayout
-            android:id="@+id/widgetLayoutMain"
+            android:id="@+id/widget_main_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#aaDEDFDE"
+            android:background="@color/green07"
             android:orientation="horizontal"
             android:paddingLeft="5dp"
             android:paddingRight="5dp">
 
             <ImageView
-                android:id="@+id/widgetImgLauncher"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:id="@+id/widget_launcher_image"
+                android:layout_width="@dimen/widget_luancher_image_width"
+                android:layout_height="@dimen/widget_luancher_image_height"
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/ic_launcher" />
-
 
             <TextView
                 android:layout_width="match_parent"
@@ -33,20 +32,28 @@
                 android:layout_marginLeft="5dp"
                 android:text="@string/app_name"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="#4B4B4D"
+                android:textColor="@color/widget_header_text_color"
                 android:textStyle="bold" />
 
         </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#aaa" />
+            android:layout_height="1dp" />
 
         <ListView
-            android:id="@+id/widgetCollectionList"
+            android:id="@+id/widget_score_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"></ListView>
+
+        <TextView
+            android:id="@+id/widget_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="@string/empty_score_list_text"
+            android:textAppearance="?android:textAppearanceLarge" />
     </LinearLayout>
 
 </FrameLayout>
