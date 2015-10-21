@@ -43,6 +43,11 @@
                 android:resource="@xml/widget_info" />
         </receiver>
 
+        <!-- Widget service -->
+        <service
+            android:name=".widget.WidgetRemoteViewsService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
     </application>
 
 </manifest>
