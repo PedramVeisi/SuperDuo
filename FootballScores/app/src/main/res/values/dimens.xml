@@ -17,4 +17,9 @@
     <dimen name="widget_score">24sp</dimen>
     <dimen name="widget_league">12sp</dimen>
 
+    <dimen name="widget_list_item_padding_top">5dp</dimen>
+    <dimen name="widget_margin">32dp</dimen>
+    <dimen name="widget_luancher_image_width">48dp</dimen>
+    <dimen name="widget_luancher_image_height">48dp</dimen>
+
 </resources>

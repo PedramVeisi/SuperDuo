@@ -77,5 +77,6 @@
     <color name="red14">#FFE4E4</color>
 
     <color name="widget_text_color">@android:color/black</color>
+    <color name="widget_header_text_color">#4B4B4D</color>
 
 </resources>
