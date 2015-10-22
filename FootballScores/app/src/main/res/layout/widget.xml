@@ -23,6 +23,7 @@
                 android:layout_width="@dimen/widget_luancher_image_width"
                 android:layout_height="@dimen/widget_luancher_image_height"
                 android:layout_gravity="center_vertical"
+                android:contentDescription="@string/launcher_image_content_description"
                 android:src="@drawable/ic_launcher" />
 
             <TextView

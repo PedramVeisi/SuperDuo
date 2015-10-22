@@ -41,4 +41,5 @@
     <string name="share_button_content_description">Share</string>
     <string name="home_team_crest_content_description">Home team crest</string>
     <string name="away_team_crest_content_description">Away team crest</string>
+    <string name="launcher_image_content_description">Application icon</string>
 </resources>
