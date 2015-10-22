@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/about_text"
+        android:contentDescription="@string/about_text"
         android:textSize="12sp" />
 
 </RelativeLayout>
