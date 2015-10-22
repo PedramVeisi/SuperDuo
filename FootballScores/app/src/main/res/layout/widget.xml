@@ -15,8 +15,10 @@
             android:layout_height="wrap_content"
             android:background="@color/green07"
             android:orientation="horizontal"
+            android:paddingEnd="5dp"
             android:paddingLeft="5dp"
-            android:paddingRight="5dp">
+            android:paddingRight="5dp"
+            android:paddingStart="5dp">
 
             <ImageView
                 android:id="@+id/widget_launcher_image"
@@ -31,6 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:text="@string/app_name"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/widget_header_text_color"
