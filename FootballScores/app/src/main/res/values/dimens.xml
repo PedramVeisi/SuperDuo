@@ -21,6 +21,7 @@
     <dimen name="widget_margin">32dp</dimen>
     <dimen name="widget_luancher_image_width">48dp</dimen>
     <dimen name="widget_luancher_image_height">48dp</dimen>
+
     <dimen name="detail_fragment_share_button_left_padding">120dp</dimen>
     <dimen name="detail_fragment_share_button_right_padding">120dp</dimen>
 
