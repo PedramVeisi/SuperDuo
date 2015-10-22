@@ -42,9 +42,12 @@
             android:layout_gravity="center"
             android:contentDescription="@string/share_button_content_description"
             android:drawableLeft="@android:drawable/ic_menu_share"
+            android:drawableStart="@android:drawable/ic_menu_share"
             android:gravity="center"
-            android:paddingLeft="120dp"
-            android:paddingRight="120dp"
+            android:paddingLeft="@dimen/detail_fragment_share_button_left_padding"
+            android:paddingRight="@dimen/detail_fragment_share_button_right_padding"
+            android:paddingStart="@dimen/detail_fragment_share_button_left_padding"
+            android:paddingEnd="@dimen/detail_fragment_share_button_right_padding"
             android:text="@string/share_text" />
     </FrameLayout>
 
