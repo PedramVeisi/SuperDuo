@@ -1,14 +1,9 @@
-# SuperDuo
-
-For the Football Scores app, put your API key in strings.xml file (under name api_key)
-
-
 Super Duo
 =============
 
 Third project in Udacity [**"Android Developer Nanodegree"** program](https://www.udacity.com/course/android-developer-nanodegree--nd801).
 
-### **_Introduction:_**
+### Introduction
 
 This project contains two apps: **Alexandria** and **Football Scores**.
 
@@ -18,7 +13,10 @@ This project contains two apps: **Alexandria** and **Football Scores**.
 
 These two apps are improved in terms of User Experience (UX) and accessibility and new features such as, scanner and widgets are implemented.
 
-### **_Completed Requirements:_**
+### Instructions
+For the Football Scores app, put your API key in strings.xml file (under name api_key)
+
+### Completed Requirements
 
 #### Required:
 
@@ -50,3 +48,4 @@ _Football Scores:_
 _Alexandria:_
 * ZXing: https://github.com/zxing/zxing
 * ZXing Android Embedded: https://github.com/journeyapps/zxing-android-embedded
+ 
