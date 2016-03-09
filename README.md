@@ -1,7 +1,7 @@
 Super Duo
 =============
 
-Third project in Udacity [**"Android Developer Nanodegree"** program](https://www.udacity.com/course/android-developer-nanodegree--nd801).
+Third project in Udacity [**"Android Developer Nanodegree"**](https://www.udacity.com/course/android-developer-nanodegree--nd801) program.
 
 ### Introduction
 
